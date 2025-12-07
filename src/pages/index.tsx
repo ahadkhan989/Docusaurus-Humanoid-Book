@@ -57,11 +57,6 @@ const moduleCards = [
       description: '🌍 Dive into Gazebo for realistic robot simulations. Test and refine your algorithms in a virtual environment.',
     },
     { 
-      title: 'Introduction', 
-      link: '/docs/intro', 
-      description: '👋 Start your journey into Physical AI and robotics. Get an overview of what to expect in this comprehensive guide.',
-    },
-    { 
       title: 'Isaac ROS Perception', 
       link: '/docs/isaac-ros-perception', 
       description: '👀 Master perception with Isaac ROS. Enable your robots to understand and interact with their surroundings.',
@@ -90,11 +85,6 @@ const moduleCards = [
       title: 'Unity Visualization', 
       link: '/docs/unity-visualization', 
       description: '🎨 Visualize your robotic systems in Unity. Create stunning 3D environments for simulation and presentation.',
-    },
-    { 
-      title: 'Voice to Action', 
-      link: '/docs/voice-to-action', 
-      description: '🗣️ Implement voice commands to control robots. Transform spoken language into physical actions.',
     },
 ];
 
