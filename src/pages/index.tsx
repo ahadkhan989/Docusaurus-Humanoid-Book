@@ -36,18 +36,66 @@ function HomepageHeader() {
 }
 
 const moduleCards = [
-    { title: 'Foundations of Physical AI', link: '/docs/0-foundations-of-physical-ai' },
-    { title: 'Capstone Architecture', link: '/docs/capstone-architecture' },
-    { title: 'Capstone Implementation', link: '/docs/capstone-implementation' },
-    { title: 'Gazebo Simulation', link: '/docs/gazebo-simulation' },
-    { title: 'Introduction', link: '/docs/intro' },
-    { title: 'Isaac ROS Perception', link: '/docs/isaac-ros-perception' },
-    { title: 'Isaac Sim Fundamentals', link: '/docs/isaac-sim-fundamentals' },
-    { title: 'LLM Cognitive Planning', link: '/docs/llm-cognitive-planning' },
-    { title: 'Multimodal Interaction', link: '/docs/multimodal-interaction' },
-    { title: 'ROS2 Core Concepts', link: '/docs/ros2-core-concepts' },
-    { title: 'Unity Visualization', link: '/docs/unity-visualization' },
-    { title: 'Voice to Action', link: '/docs/voice-to-action' },
+    { 
+      title: 'Foundations of Physical AI', 
+      link: '/docs/0-foundations-of-physical-ai', 
+      description: '🤖 Explore the fundamental concepts of Physical AI. Understand embodied intelligence and its unique challenges.',
+    },
+    { 
+      title: 'Capstone Architecture', 
+      link: '/docs/capstone-architecture', 
+      description: '🏗️ Design robust architectures for your robotics projects. Learn to build scalable and efficient systems.',
+    },
+    { 
+      title: 'Capstone Implementation', 
+      link: '/docs/capstone-implementation', 
+      description: '💻 Implement your capstone project from design to deployment. Bring your physical AI ideas to life.',
+    },
+    { 
+      title: 'Gazebo Simulation', 
+      link: '/docs/gazebo-simulation', 
+      description: '🌍 Dive into Gazebo for realistic robot simulations. Test and refine your algorithms in a virtual environment.',
+    },
+    { 
+      title: 'Introduction', 
+      link: '/docs/intro', 
+      description: '👋 Start your journey into Physical AI and robotics. Get an overview of what to expect in this comprehensive guide.',
+    },
+    { 
+      title: 'Isaac ROS Perception', 
+      link: '/docs/isaac-ros-perception', 
+      description: '👀 Master perception with Isaac ROS. Enable your robots to understand and interact with their surroundings.',
+    },
+    { 
+      title: 'Isaac Sim Fundamentals', 
+      link: '/docs/isaac-sim-fundamentals', 
+      description: '🎮 Learn the basics of Isaac Sim for advanced robotics simulation. Build and control virtual robots with ease.',
+    },
+    { 
+      title: 'LLM Cognitive Planning', 
+      link: '/docs/llm-cognitive-planning', 
+      description: '🧠 Integrate Large Language Models for cognitive planning. Empower robots with advanced decision-making capabilities.',
+    },
+    { 
+      title: 'Multimodal Interaction', 
+      link: '/docs/multimodal-interaction', 
+      description: '🗣️ Explore multimodal interaction for natural human-robot communication. Create intuitive and responsive interfaces.',
+    },
+    { 
+      title: 'ROS2 Core Concepts', 
+      link: '/docs/ros2-core-concepts', 
+      description: '⚙️ Grasp the core concepts of ROS2. Build a strong foundation for developing complex robotic applications.',
+    },
+    { 
+      title: 'Unity Visualization', 
+      link: '/docs/unity-visualization', 
+      description: '🎨 Visualize your robotic systems in Unity. Create stunning 3D environments for simulation and presentation.',
+    },
+    { 
+      title: 'Voice to Action', 
+      link: '/docs/voice-to-action', 
+      description: '🗣️ Implement voice commands to control robots. Transform spoken language into physical actions.',
+    },
 ];
 
 function ModuleCards() {
@@ -66,7 +114,7 @@ function ModuleCards() {
                 </div>
                 <div className="card__body">
                   <p>
-                    Learn more about {card.title}.
+                    {card.description}
                   </p>
                 </div>
                 <div className="card__footer">
