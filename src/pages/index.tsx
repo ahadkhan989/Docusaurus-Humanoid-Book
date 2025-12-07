@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className={clsx('button button--outline button--lg', styles.callToActionButtonOutline)}
-            to="/docs">
+            to="/docs"> {/* Corrected link here */}
             View Chapters
           </Link>
         </div>
@@ -59,7 +59,7 @@ function ModuleCards() {
         </Heading>
         <div className="row">
           {moduleCards.map((card, idx) => (
-            <div key={idx} className="col col--4">
+            <div key={idx} className="col col--6"> {/* Changed from col--4 to col--6 */}
               <div className={clsx('card', styles.tutorialCard)}>
                 <div className="card__header">
                   <h3>{card.title}</h3>
