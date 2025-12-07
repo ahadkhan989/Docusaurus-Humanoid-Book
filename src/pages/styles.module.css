@@ -108,6 +108,10 @@
   color: #F0F0F0;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
+  min-height: 300px; /* Added min-height */
+  display: flex; /* Added for vertical centering of content */
+  flex-direction: column; /* Added for vertical centering of content */
+  justify-content: space-between; /* Added for vertical centering of content */
 }
 
 .tutorialCard:hover {
