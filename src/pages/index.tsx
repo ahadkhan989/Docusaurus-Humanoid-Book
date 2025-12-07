@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--primary button--lg', styles.callToActionButton)}
-            to="/docs/0-foundations-of-physical-ai">
+            to="/docs/foundations-of-physical-ai">
             Start Reading Now
           </Link>
           <Link
