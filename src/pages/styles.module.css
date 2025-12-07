@@ -1,0 +1,90 @@
+/**
+ * CSS Modules
+ *
+ * All styles below are applied to the Docusaurus Home Page component.
+ */
+
+.heroBanner {
+  padding: 8rem 0; /* Add some vertical padding */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Use flexbox for vertical centering */
+  align-items: center; /* Center items vertically */
+  min-height: calc(100vh - var(--ifm-navbar-height)); /* Full viewport height minus navbar */
+  background-color: #1A1A1A; /* Dark background */
+  color: #F0F0F0; /* Ash White/Light Grey text */
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem;
+  }
+}
+
+.heroTitle {
+  font-size: 3.5rem; /* Larger title */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #F0F0F0; /* Ensure title color is light */
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #D0D0D0; /* Slightly darker light grey for description */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Space between buttons */
+  margin-top: 2rem;
+}
+
+.callToActionButton {
+  background-color: #3B82F6; /* Deep Blue background */
+  color: #FFFFFF; /* White text for primary button */
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.callToActionButton:hover {
+  background-color: #2563EB; /* Slightly darker blue on hover */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.callToActionButtonOutline {
+  background-color: transparent; /* Transparent background for outline button */
+  color: #3B82F6; /* Deep Blue text for outline button */
+  border: 2px solid #3B82F6; /* Deep Blue border */
+  padding: 0.8rem 2rem;
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.callToActionButtonOutline:hover {
+  background-color: #3B82F6; /* Deep Blue background on hover */
+  color: #FFFFFF; /* White text on hover */
+  text-decoration: none;
+}
+
+/* Override Docusaurus default --ifm-color-primary for primary button to match accent color */
+:root {
+  --ifm-color-primary: #3B82F6;
+  --ifm-color-primary-dark: #2563EB;
+  --ifm-color-primary-darker: #1D4ED8;
+  --ifm-color-primary-darkest: #1E40AF;
+  --ifm-color-primary-light: #60A5FA;
+  --ifm-color-primary-lighter: #93C5FD;
+  --ifm-color-primary-lightest: #BFDBFE;
+}
