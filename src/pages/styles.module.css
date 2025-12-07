@@ -93,6 +93,7 @@
 .tutorialCards {
   padding: 4rem 0;
   background-color: #121212; /* Slightly lighter dark background for this section */
+  background-image: url('/img/circuit-board.svg'); /* Add the SVG background */
 }
 
 .sectionTitle {
