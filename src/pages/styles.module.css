@@ -88,3 +88,44 @@
   --ifm-color-primary-lighter: #93C5FD;
   --ifm-color-primary-lightest: #BFDBFE;
 }
+
+.tutorialCards {
+  padding: 4rem 0;
+  background-color: #121212; /* Slightly lighter dark background for this section */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #F0F0F0;
+}
+
+.tutorialCard {
+  background-color: #1E1E1E; /* Dark card background */
+  border: 1px solid #333;
+  color: #F0F0F0;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.tutorialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tutorialCard .card__header h3 {
+  color: #F0F0F0;
+}
+
+.tutorialCard .card__body p {
+  color: #D0D0D0;
+}
+
+.cardButton {
+  background-color: #3B82F6;
+  border: none;
+}
+
+.cardButton:hover {
+  background-color: #2563EB;
+}
