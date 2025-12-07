@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className={clsx('button button--outline button--lg', styles.callToActionButtonOutline)}
-            to="/docs"> {/* Corrected link here */}
+            to="/docs/foundations-of-physical-ai"> {/* Corrected link here */}
             View Chapters
           </Link>
         </div>
@@ -38,7 +38,7 @@ function HomepageHeader() {
 const moduleCards = [
     { 
       title: 'Foundations of Physical AI', 
-      link: '/docs/0-foundations-of-physical-ai', 
+      link: '/docs/foundations-of-physical-ai', 
       description: '🤖 Explore the fundamental concepts of Physical AI. Understand embodied intelligence and its unique challenges.',
     },
     { 
