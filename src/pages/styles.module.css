@@ -1,0 +1,152 @@
+/**
+ * CSS Modules
+ *
+ * All styles below are applied to the Docusaurus Home Page component.
+ */
+
+.heroBanner {
+  padding: 8rem 0; /* Add some vertical padding */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Use flexbox for vertical centering */
+  align-items: center; /* Center items vertically */
+  min-height: calc(100vh - var(--ifm-navbar-height)); /* Full viewport height minus navbar */
+  background-color: #1A1A1A; /* Dark background */
+  background-image: url('/img/circuit-board.svg'); /* Add the SVG background */
+  color: #F0F0F0; /* Ash White/Light Grey text */
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem;
+  }
+}
+
+.heroTitle {
+  font-size: 3.5rem; /* Larger title */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #F0F0F0; /* Ensure title color is light */
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #D0D0D0; /* Slightly darker light grey for description */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Space between buttons */
+  margin-top: 2rem;
+}
+
+.callToActionButton {
+  background-color: #3B82F6; /* Deep Blue background */
+  color: #FFFFFF; /* White text for primary button */
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.callToActionButton:hover {
+  background-color: #2563EB; /* Slightly darker blue on hover */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.callToActionButtonOutline {
+  background-color: transparent; /* Transparent background for outline button */
+  color: #3B82F6; /* Deep Blue text for outline button */
+  border: 2px solid #3B82F6; /* Deep Blue border */
+  padding: 0.8rem 2rem;
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.callToActionButtonOutline:hover {
+  background-color: #3B82F6; /* Deep Blue background on hover */
+  color: #FFFFFF; /* White text on hover */
+  text-decoration: none;
+}
+
+/* Override Docusaurus default --ifm-color-primary for primary button to match accent color */
+:root {
+  --ifm-color-primary: #3B82F6;
+  --ifm-color-primary-dark: #2563EB;
+  --ifm-color-primary-darker: #1D4ED8;
+  --ifm-color-primary-darkest: #1E40AF;
+  --ifm-color-primary-light: #60A5FA;
+  --ifm-color-primary-lighter: #93C5FD;
+  --ifm-color-primary-lightest: #BFDBFE;
+}
+
+.tutorialCards {
+  padding: 4rem 0;
+  background-color: #0A0A0A; /* A slightly darker background */
+  background-image: url('/img/plus-pattern.svg'); /* Use the new SVG background */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #F0F0F0;
+}
+
+.tutorialCard {
+  background-color: #1E1E1E; /* Dark card background */
+  border: 1px solid #333;
+  color: #F0F0F0;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  min-height: 300px; /* Added min-height */
+  display: flex; /* Added for vertical centering of content */
+  flex-direction: column; /* Added for vertical centering of content */
+  justify-content: space-between; /* Added for vertical centering of content */
+}
+
+.tutorialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tutorialCard .card__header h3 {
+  color: #F0F0F0;
+}
+
+.tutorialCard .card__body p {
+  color: #D0D0D0;
+}
+
+.cardButton {
+  background-color: #3B82F6;
+  border: none;
+}
+
+.cardButton:hover {
+  background-color: #2563EB;
+}
+
+.overviewSection {
+  padding: 4rem 0;
+  background-color: #1A1A1A;
+  background-image: url('/img/circuit-board.svg');
+  color: #F0F0F0;
+  text-align: center;
+}
+
+.overviewText {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #D0D0D0;
+  margin-bottom: 1.5rem;
+}
