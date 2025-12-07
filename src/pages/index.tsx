@@ -35,42 +35,30 @@ function HomepageHeader() {
   );
 }
 
-const tutorialCards = [
-  {
-    title: 'Congratulations',
-    link: '/docs/tutorial-basics/congratulations',
-  },
-  {
-    title: 'Create a Blog Post',
-    link: '/docs/tutorial-basics/create-a-blog-post',
-  },
-  {
-    title: 'Create a Document',
-    link: '/docs/tutorial-basics/create-a-document',
-  },
-  {
-    title: 'Create a Page',
-    link: '/docs/tutorial-basics/create-a-page',
-  },
-  {
-    title: 'Deploy Your Site',
-    link: '/docs/tutorial-basics/deploy-your-site',
-  },
-  {
-    title: 'Markdown Features',
-    link: '/docs/tutorial-basics/markdown-features',
-  },
+const moduleCards = [
+    { title: 'Foundations of Physical AI', link: '/docs/0-foundations-of-physical-ai' },
+    { title: 'Capstone Architecture', link: '/docs/capstone-architecture' },
+    { title: 'Capstone Implementation', link: '/docs/capstone-implementation' },
+    { title: 'Gazebo Simulation', link: '/docs/gazebo-simulation' },
+    { title: 'Introduction', link: '/docs/intro' },
+    { title: 'Isaac ROS Perception', link: '/docs/isaac-ros-perception' },
+    { title: 'Isaac Sim Fundamentals', link: '/docs/isaac-sim-fundamentals' },
+    { title: 'LLM Cognitive Planning', link: '/docs/llm-cognitive-planning' },
+    { title: 'Multimodal Interaction', link: '/docs/multimodal-interaction' },
+    { title: 'ROS2 Core Concepts', link: '/docs/ros2-core-concepts' },
+    { title: 'Unity Visualization', link: '/docs/unity-visualization' },
+    { title: 'Voice to Action', link: '/docs/voice-to-action' },
 ];
 
-function TutorialCards() {
+function ModuleCards() {
   return (
     <section className={styles.tutorialCards}>
       <div className="container">
         <Heading as="h2" className={clsx('text--center', styles.sectionTitle)}>
-          Tutorial - Basics
+          Our Modules
         </Heading>
         <div className="row">
-          {tutorialCards.map((card, idx) => (
+          {moduleCards.map((card, idx) => (
             <div key={idx} className="col col--4">
               <div className={clsx('card', styles.tutorialCard)}>
                 <div className="card__header">
@@ -105,7 +93,7 @@ export default function Home(): ReactNode {
       description="Learn about Physical AI and Humanoid Robotics with our comprehensive guide.">
       <HomepageHeader />
       <main>
-        <TutorialCards />
+        <ModuleCards />
       </main>
     </Layout>
   );
