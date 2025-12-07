@@ -85,6 +85,28 @@ function ModuleCards() {
   );
 }
 
+function OverviewSection() {
+  return (
+    <section className={styles.overviewSection}>
+      <div className="container">
+        <Heading as="h2" className={clsx('text--center', styles.sectionTitle)}>
+          Overview
+        </Heading>
+        <div className="row">
+          <div className="col col--8 col--offset-2">
+            <p className={styles.overviewText}>
+              This book provides a comprehensive journey into the world of Physical AI and Humanoid Robotics. Starting from the fundamental concepts that differentiate physical AI from traditional AI, we guide you through the core components of building intelligent, embodied systems. You will learn about perception, cognitive planning, and multimodal interaction, and gain hands-on experience with industry-standard tools like ROS2, Gazebo, and Isaac Sim.
+            </p>
+            <p className={styles.overviewText}>
+              The curriculum is structured to build your skills progressively. Each module covers a specific domain, from basic simulations to advanced AI-driven behaviors. By the end of this book, you will have the knowledge to design, simulate, and implement complex robotics applications, culminating in a capstone project that integrates all the concepts you've learned.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -94,6 +116,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <ModuleCards />
+        <OverviewSection />
       </main>
     </Layout>
   );

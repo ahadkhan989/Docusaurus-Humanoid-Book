@@ -130,3 +130,18 @@
 .cardButton:hover {
   background-color: #2563EB;
 }
+
+.overviewSection {
+  padding: 4rem 0;
+  background-color: #1A1A1A;
+  background-image: url('/img/circuit-board.svg');
+  color: #F0F0F0;
+  text-align: center;
+}
+
+.overviewText {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #D0D0D0;
+  margin-bottom: 1.5rem;
+}
