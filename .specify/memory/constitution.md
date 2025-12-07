@@ -1,55 +1,50 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# AI-Native Textbook on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy
+All technical explanations must be verifiable from trusted sources. Code examples must be runnable, tested, and adhere to a high standard of quality.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clarity and Accessibility
+Content must be written in simple language, avoiding unnecessary jargon to be accessible to beginners. Explanations should be step-by-step, with diagrams preferred over long theoretical passages.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Practical, Hands-on Learning
+Every chapter must include clear learning objectives, a concept explanation, a practical exercise, a summary, and an assessment or mini-project to ensure a hands-on learning experience.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Simulation-First Approach
+Development and examples will prioritize simulation before moving to physical hardware. ROS 2 examples must target Ubuntu 22.04 LTS.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Ethical and Safe Application
+A strong emphasis is placed on the ethical and safe use of AI and robotics. All instructions involving physical robots must include clear safety warnings, and content will not cover military or weaponized use cases.
 
-### [PRINCIPLE_6_NAME]
+### VI. AI-Native Experience
+The textbook will be an AI-native learning platform, featuring an embedded RAG chatbot for interactive learning, content personalization, and support.
 
+### VII. Open-Source and Collaborative
+The entire project must be public and open-source, encouraging community contributions and collaboration.
 
-[PRINCIPLE__DESCRIPTION]
+## Technical Stack and Standards
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+This section outlines the key technologies and standards that ensure consistency and quality across the project.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- **Book Framework:** Docusaurus
+- **Content Generation:** Claude Code + Spec-Kit Plus
+- **Chatbot:** OpenAI Agents / ChatKit SDK
+- **Backend:** FastAPI
+- **Database:** Neon Serverless PostgreSQL
+- **Vector Store:** Qdrant Cloud (Free Tier)
+- **Deployment:** GitHub Pages or Vercel
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Project Constraints and Success Criteria
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+This section defines the project's boundaries, constraints, and the criteria for success, ensuring alignment with the hackathon's requirements.
+
+- **Content:** Must cover all 4 modules of the official hackathon course outline in sequence and include a complete Capstone Project.
+- **Deployment:** The project must be deployable on low-budget setups using cloud alternatives and will be hosted on GitHub Pages or Vercel.
+- **Success:** Is measured by the successful deployment of the book, the correct functioning of the RAG chatbot, and the reproducibility of the capstone demo.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution is the guiding document for the project. All development, content creation, and contributions must align with these principles. Amendments to this constitution require team consensus and must be documented.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

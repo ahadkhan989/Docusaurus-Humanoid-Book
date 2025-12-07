@@ -31,7 +31,13 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **I. Technical Accuracy**: All technical claims are verifiable and code is tested.
+- [ ] **II. Clarity and Accessibility**: Content is simple, clear, and accessible to beginners.
+- [ ] **III. Practical, Hands-on Learning**: Includes objectives, exercises, and assessments.
+- [ ] **IV. Simulation-First Approach**: Prioritizes simulation; ROS 2 targets Ubuntu 22.04.
+- [ ] **V. Ethical and Safe Application**: Includes safety warnings; no military applications.
+- [ ] **VI. AI-Native Experience**: Integrates the RAG chatbot and personalization.
+- [ ] **VII. Open-Source and Collaborative**: The work is public and open-source.
 
 ## Project Structure
 
