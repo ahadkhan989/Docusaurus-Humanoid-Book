@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 // import {themes as prismThemes} from 'prism-react-renderer';
 // import type {Config} from '@docusaurus/types';
 // import type * as Preset from '@docusaurus/preset-classic';
@@ -77,7 +79,8 @@
 //     navbar: {
 //       title: 'My Site',
 //       logo: {
-//         alt: 'My Site Logo',
+//         alt: 'My Si
+// te Logo',
 //         src: 'img/logo.svg',
 //       },
 //       items: [
@@ -148,12 +151,13 @@
 // };
 
 // export default config;
+>>>>>>> a853bc253f235c1b5fa41d93a8c15c8e8e8a1f2e
 
 
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-
+import path from 'path';
 
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -163,20 +167,22 @@ const config: Config = {
   tagline: 'Physical AI & Humanoid Robotics',
   favicon: 'img/favicon.ico',
 
-  // Future flags
-  future: {
-    v4: true, 
-  },
-
-  // ✔ Correct local dev + GitHub Pages setup
-  url: 'http://localhost',
-  baseUrl: '/ai-native-textbook/',
+  // Set the production url of your site here
+  url: 'http://localhost:3001', // Local development URL
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub Pages, this is usually '/<project-name>/'
+  baseUrl: '/',
 
   // GitHub pages deployment config
-  organizationName: 'MairajShaikh110',
+  organizationName: 'ahadkhan989',
   projectName: 'ai-native-textbook',
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    mermaid: true,
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -217,7 +223,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -227,14 +233,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Book',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
@@ -244,7 +250,11 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
+<<<<<<< HEAD
+              label: 'Book',
+=======
               label: 'Tutorial',
+>>>>>>> a853bc253f235c1b5fa41d93a8c15c8e8e8a1f2e
               to: '/docs/intro',
             },
           ],
@@ -267,20 +277,21 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: 'Contact Ahad Khan',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/ahadkhan989',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/ahadkhan989',
+            },
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Ahad Khan Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
